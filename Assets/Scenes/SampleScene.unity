@@ -2252,7 +2252,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2025063253}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7019088426592046978}
+        m_MethodName: CambiarCabeza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6103262681547419344}
+        m_MethodName: CambiarCabeza
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2025063253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3638,6 +3660,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6103262681547911919}
   - component: {fileID: 6103262681540156685}
+  - component: {fileID: 6103262681547419344}
   m_Layer: 0
   m_Name: Female
   m_TagString: Untagged
@@ -3645,6 +3668,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!114 &6103262681547419344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6103262681547419343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519946444094e224f98b1c60fa28fdc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Headtypes:
+  - {fileID: 6103262681547419337}
+  - {fileID: 6103262681547419339}
+  - {fileID: 6103262681547419333}
+  headValue: 0
 --- !u!1 &6103262681547419345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5695,6 +5735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7019088426592146017}
   - component: {fileID: 7019088426599349749}
+  - component: {fileID: 7019088426592046978}
   m_Layer: 0
   m_Name: Male
   m_TagString: Untagged
@@ -5702,6 +5743,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &7019088426592046978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7019088426592046977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 519946444094e224f98b1c60fa28fdc4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Headtypes:
+  - {fileID: 7019088426592046645}
+  - {fileID: 7019088426592046647}
+  - {fileID: 7019088426592046641}
+  headValue: 0
 --- !u!1 &7019088426592046979
 GameObject:
   m_ObjectHideFlags: 0
