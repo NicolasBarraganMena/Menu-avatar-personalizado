@@ -27,16 +27,37 @@ public class Avatar : MonoBehaviour
     Renderer rendererH;
     private Material[] hairMaterials;
 
+    [Header("Shirt Settings")]
+    //Control cambio color camisa
+    public Material[] shirtColors;
+    public GameObject torsoPart;
+    public int shirtI;
+    public int colorValue;
+    Renderer rend;
+    private Material[] shirtMaterials;
+
+    [Header("Pants Settings")]
+    //Control cambio de pantalon
+    public Material[] pantsColors;
+    public GameObject pantsPart;
+    public int[] pantsI;
+    public int pantsValue;
+    Renderer r;
+    private Material[] pantsMaterials;
+
     // Start is called before the first frame update
     void Start()
     {
         //Valores iniciales del avatar
         headValue = 0;
         skinValue = 0;
+        colorValue = 0;
 
         //Funciones manejos materiales
         ControlPiel();
         ControlCabello();
+        ControlCamisa();
+        ControlPantalon();
     }
 
     // Update is called once per frame
@@ -46,7 +67,8 @@ public class Avatar : MonoBehaviour
         //Funciones manejos materiales
         ControlPiel();
         ControlCabello();
-
+        ControlCamisa();
+        ControlPantalon();
     }
 
     //cambiar el color de piel
@@ -144,6 +166,61 @@ public class Avatar : MonoBehaviour
                 rendererH.enabled = true;
                 rendererH.sharedMaterials = hairMaterials;
             }
+        }
+    }
+
+    //cambiar color camisa
+    public void CambiarCamisa()
+    {
+        if (colorValue < shirtColors.Length - 1)
+        {
+            colorValue = colorValue + 1;
+        }
+        else
+        {
+            colorValue = 0;
+        }
+    }
+
+    //control color camisa
+    void ControlCamisa()
+    {
+        rend = torsoPart.GetComponent<Renderer>();
+        shirtMaterials = rend.sharedMaterials;
+        shirtMaterials[shirtI] = shirtColors[colorValue];
+        rend.enabled = true;
+        rend.sharedMaterials = shirtMaterials;
+    }
+
+    //Cambiar el color de los pantalones
+    public void CambiarPantalon()
+    {
+        if (pantsValue < pantsColors.Length - 1)
+        {
+            pantsValue = pantsValue + 1;
+        }
+        else
+        {
+            pantsValue = 0;
+        }
+    }
+
+    void ControlPantalon()
+    {
+        r = pantsPart.GetComponent<Renderer>();
+        pantsMaterials = r.sharedMaterials;
+        if (pantsMaterials.Length == 2)
+        {
+            pantsMaterials[pantsI[0]] = pantsColors[pantsValue];
+            r.enabled = true;
+            r.sharedMaterials = pantsMaterials;
+        }
+        else if (pantsMaterials.Length == 3)
+        {
+            pantsMaterials[pantsI[0]] = pantsColors[pantsValue];
+            pantsMaterials[pantsI[1]] = pantsColors[pantsValue];
+            r.enabled = true;
+            r.sharedMaterials = pantsMaterials;
         }
     }
 }

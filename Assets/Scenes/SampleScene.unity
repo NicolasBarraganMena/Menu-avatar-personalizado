@@ -791,7 +791,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 449925794}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7019088426592046978}
+        m_MethodName: CambiarCamisa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6103262681547419344}
+        m_MethodName: CambiarCamisa
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &449925794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1811,7 +1833,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1212171427}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7019088426592046978}
+        m_MethodName: CambiarPantalon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6103262681547419344}
+        m_MethodName: CambiarPantalon
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1212171427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3750,6 +3794,21 @@ MonoBehaviour:
   - {fileID: 6103262681547419339}
   - {fileID: 6103262681547419333}
   hairValue: 0
+  shirtColors:
+  - {fileID: 2100000, guid: e3c92db89668ebb439f67832a852a3b4, type: 2}
+  - {fileID: 2100000, guid: 03f63bc20fb459248a4a28ac7768c324, type: 2}
+  - {fileID: 2100000, guid: a33ed502185220a4d97ede3de7fd9163, type: 2}
+  - {fileID: 2100000, guid: a4837fa2db3044f4ebddda971ae619f6, type: 2}
+  torsoPart: {fileID: 6103262681547419509}
+  shirtI: 0
+  colorValue: 0
+  pantsColors:
+  - {fileID: 2100000, guid: f64b913b9c029c64686fe685362dc010, type: 2}
+  - {fileID: 2100000, guid: 95b4fabaf92645b47b01d508061fd389, type: 2}
+  - {fileID: 2100000, guid: 6425d2b4aa9744543a7391465ae1e706, type: 2}
+  pantsPart: {fileID: 6103262681547419515}
+  pantsI: 0000000002000000
+  pantsValue: 0
 --- !u!1 &6103262681547419345
 GameObject:
   m_ObjectHideFlags: 0
@@ -5846,6 +5905,21 @@ MonoBehaviour:
   - {fileID: 7019088426592046647}
   - {fileID: 7019088426592046641}
   hairValue: 0
+  shirtColors:
+  - {fileID: 2100000, guid: e3c92db89668ebb439f67832a852a3b4, type: 2}
+  - {fileID: 2100000, guid: 03f63bc20fb459248a4a28ac7768c324, type: 2}
+  - {fileID: 2100000, guid: a33ed502185220a4d97ede3de7fd9163, type: 2}
+  - {fileID: 2100000, guid: a4837fa2db3044f4ebddda971ae619f6, type: 2}
+  torsoPart: {fileID: 7019088426592046985}
+  shirtI: 1
+  colorValue: 0
+  pantsColors:
+  - {fileID: 2100000, guid: f64b913b9c029c64686fe685362dc010, type: 2}
+  - {fileID: 2100000, guid: 95b4fabaf92645b47b01d508061fd389, type: 2}
+  - {fileID: 2100000, guid: 6425d2b4aa9744543a7391465ae1e706, type: 2}
+  pantsPart: {fileID: 7019088426592046989}
+  pantsI: 00000000
+  pantsValue: 0
 --- !u!1 &7019088426592046979
 GameObject:
   m_ObjectHideFlags: 0
