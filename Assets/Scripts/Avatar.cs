@@ -19,6 +19,14 @@ public class Avatar : MonoBehaviour
     Renderer renderer;
     private Material[] materials;
 
+    [Header("Hair Settings")]
+    //Control cambio color cabello
+    public Material[] hairs;
+    public GameObject[] hairParts;
+    public int hairValue;
+    Renderer rendererH;
+    private Material[] hairMaterials;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +36,7 @@ public class Avatar : MonoBehaviour
 
         //Funciones manejos materiales
         ControlPiel();
+        ControlCabello();
     }
 
     // Update is called once per frame
@@ -36,6 +45,7 @@ public class Avatar : MonoBehaviour
 
         //Funciones manejos materiales
         ControlPiel();
+        ControlCabello();
 
     }
 
@@ -97,6 +107,42 @@ public class Avatar : MonoBehaviour
             else
             {
                 Headtypes[j].SetActive(true);
+            }
+        }
+    }
+
+    //Cambiar el color de cabello
+    public void CambiarCabello()
+    {
+        if (hairValue < hairs.Length - 1)
+        {
+            hairValue = hairValue + 1;
+        }
+        else
+        {
+            hairValue = 0;
+        }
+    }
+
+    //control material cabello
+    void ControlCabello()
+    {
+        for (int i = 0; i < hairParts.Length; i++)
+        {
+            rendererH = hairParts[i].GetComponent<Renderer>();
+            hairMaterials = rendererH.sharedMaterials;
+            if (hairMaterials.Length == 2) //Cuando tiene 1 solo material de pelo
+            {
+                hairMaterials[1] = hairs[hairValue];
+                rendererH.enabled = true;
+                rendererH.sharedMaterials = hairMaterials;
+            }
+            else if (hairMaterials.Length == 3)
+            { //Cuando tiene 2 materiales de pelo
+                hairMaterials[1] = hairs[hairValue];
+                hairMaterials[2] = hairs[hairValue];
+                rendererH.enabled = true;
+                rendererH.sharedMaterials = hairMaterials;
             }
         }
     }

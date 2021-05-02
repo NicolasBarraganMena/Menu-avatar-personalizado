@@ -1290,7 +1290,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 812250473}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7019088426592046978}
+        m_MethodName: CambiarPiel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6103262681547419344}
+        m_MethodName: CambiarPiel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &812250473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1570,7 +1592,29 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 974600266}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7019088426592046978}
+        m_MethodName: CambiarCabello
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 6103262681547419344}
+        m_MethodName: CambiarCabello
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &974600266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3583,7 +3627,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6103262681547419335
 GameObject:
   m_ObjectHideFlags: 0
@@ -3616,7 +3660,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6103262681547419339
 GameObject:
   m_ObjectHideFlags: 0
@@ -3667,7 +3711,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &6103262681547419344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3685,6 +3729,27 @@ MonoBehaviour:
   - {fileID: 6103262681547419339}
   - {fileID: 6103262681547419333}
   headValue: 0
+  skins:
+  - {fileID: 2100000, guid: 0cb07277ecdcb6547ad06f13b33b4736, type: 2}
+  - {fileID: 2100000, guid: 17f1bd9c4bd45454ebf9855e7dfda148, type: 2}
+  - {fileID: 2100000, guid: f8709670b974bb34b9bb5bde311063da, type: 2}
+  - {fileID: 2100000, guid: 6b57555aa8704c14a8af79bd0146a466, type: 2}
+  skinParts:
+  - {fileID: 6103262681547419337}
+  - {fileID: 6103262681547419509}
+  - {fileID: 6103262681547419515}
+  skinI: 000000000100000001000000
+  skinValue: 0
+  hairs:
+  - {fileID: 2100000, guid: a4b9d3f58b80099439bedb92279c3590, type: 2}
+  - {fileID: 2100000, guid: 2b11d852be6fc6643a7304ad7ee36ce9, type: 2}
+  - {fileID: 2100000, guid: 5605e5920a541bf408757aac3099af95, type: 2}
+  - {fileID: 2100000, guid: ebe0fedcf36050348ae48d12e109f895, type: 2}
+  hairParts:
+  - {fileID: 6103262681547419337}
+  - {fileID: 6103262681547419339}
+  - {fileID: 6103262681547419333}
+  hairValue: 0
 --- !u!1 &6103262681547419345
 GameObject:
   m_ObjectHideFlags: 0
@@ -3957,7 +4022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6103262681547419511
 GameObject:
   m_ObjectHideFlags: 0
@@ -3974,7 +4039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6103262681547419513
 GameObject:
   m_ObjectHideFlags: 0
@@ -3991,7 +4056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &6103262681547419515
 GameObject:
   m_ObjectHideFlags: 0
@@ -4008,7 +4073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6103262681547419517
 GameObject:
   m_ObjectHideFlags: 0
@@ -5742,7 +5807,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &7019088426592046978
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5760,6 +5825,27 @@ MonoBehaviour:
   - {fileID: 7019088426592046647}
   - {fileID: 7019088426592046641}
   headValue: 0
+  skins:
+  - {fileID: 2100000, guid: 0cb07277ecdcb6547ad06f13b33b4736, type: 2}
+  - {fileID: 2100000, guid: 17f1bd9c4bd45454ebf9855e7dfda148, type: 2}
+  - {fileID: 2100000, guid: f8709670b974bb34b9bb5bde311063da, type: 2}
+  - {fileID: 2100000, guid: 6b57555aa8704c14a8af79bd0146a466, type: 2}
+  skinParts:
+  - {fileID: 7019088426592046645}
+  - {fileID: 7019088426592046985}
+  - {fileID: 7019088426592046989}
+  skinI: 000000000000000001000000
+  skinValue: 0
+  hairs:
+  - {fileID: 2100000, guid: a4b9d3f58b80099439bedb92279c3590, type: 2}
+  - {fileID: 2100000, guid: 2b11d852be6fc6643a7304ad7ee36ce9, type: 2}
+  - {fileID: 2100000, guid: 5605e5920a541bf408757aac3099af95, type: 2}
+  - {fileID: 2100000, guid: ebe0fedcf36050348ae48d12e109f895, type: 2}
+  hairParts:
+  - {fileID: 7019088426592046645}
+  - {fileID: 7019088426592046647}
+  - {fileID: 7019088426592046641}
+  hairValue: 0
 --- !u!1 &7019088426592046979
 GameObject:
   m_ObjectHideFlags: 0
